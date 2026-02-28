@@ -56,7 +56,16 @@ class MyCatalog extends StatelessWidget {
             )
         ],
       ),
-    )
+      body: ListView.builder(
+        itemCount: products. length,
+        itemBuilder: (context, index) {
+          return ListTile(
+            title: Text(products[index]),
+            trailing: AddButton(item: products[index]),
+          );
+        },
+      ),
+    );
   }
 }
 
