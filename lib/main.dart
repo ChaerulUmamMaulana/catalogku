@@ -7,7 +7,7 @@ void main() {
       child: const MyApp(),
   ),
   );
-
+}
   class CartModel extends ChangeNotifier {
     final List<String>_items = [];
 
@@ -23,5 +23,20 @@ void main() {
       notifyListeners();
     }
   }
-  
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const MyCatalog(),
+        '/cart': (context) => const MyCart(),
+      },
+    );
+  }
 }
+
+  
