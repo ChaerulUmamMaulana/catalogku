@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 void main() {
   runApp(
     ChangeNotifierProvider(
-      create: (context) => CarModel(),
+      create: (context) => CartModel(),
       child: const MyApp(),
   ),
   );
@@ -114,7 +115,8 @@ class MyCart extends StatelessWidget {
               onPressed: () => cart.removeAll(),
               style: ElevatedButton.styleFrom(backgroundColor: Colors.red), 
               child: const Text('Hapus Keranjang', style:  TextStyle(color: Colors.white))
-              ),)
+              ),
+              ),
         ],
       ),
     );
