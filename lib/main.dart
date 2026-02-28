@@ -77,7 +77,7 @@ class AddButton extends StatelessWidget {
   @override
 
 Widget build(BuildContext context) {
-  final isInCart = context.select<CartModel, bool>({cart} => cart.items.contains(item));
+  final isInCart = context.select<CartModel, bool>((cart) => cart.items.contains(item));
 
   return TextButton(
     onPressed: isInCart
