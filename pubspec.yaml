@@ -64,6 +64,7 @@ flutter:
     - assets/screenshot/screenshot_1.jpeg
     - assets/screenshot/screenshot_2.jpeg
     - assets/screenshot/screenshot_3.jpeg
+    - assets/screenshot/screenshot_icon_aplikasi.jpeg
 
   # To add assets to your application, add an assets section, like this:
   # assets:
