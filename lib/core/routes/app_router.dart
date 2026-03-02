@@ -1,3 +1,5 @@
+import 'package:catalogku/features/cart/presentation/pages/cart_page.dart';
+import 'package:catalogku/features/cart/presentation/pages/catalog_page.dart';
 import 'package:flutter/material.dart';
 
 class AppRouter {
@@ -6,6 +8,6 @@ class AppRouter {
   
   static Map<String, WidgetBuilder> get routes => {
     catalog: (context) => const CatalogPage(),
-    cart: (context) => const CartPage(),
+    cart: (context) => const MyCart(),
   };
 }

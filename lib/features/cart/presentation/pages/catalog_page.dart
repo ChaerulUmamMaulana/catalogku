@@ -1,5 +1,6 @@
 import 'package:catalogku/core/routes/app_router.dart';
 import 'package:catalogku/features/cart/domain/entities/product.dart';
+import 'package:catalogku/features/cart/presentation/widgets/add_button_widget.dart';
 import 'package:flutter/material.dart';
 
 class CatalogPage extends StatelessWidget {
